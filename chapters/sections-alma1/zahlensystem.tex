@@ -43,15 +43,15 @@ z=(z_{n-1},\ldots, z_0)_b
 
 Betrachte
 \[
-z= \left\lfloor{\frac{z}{b}}\right\rfloor \cdot b + (z \mod b)
+z= \underbrace{ \left\lfloor{\frac{z}{b}}\right\rfloor }_{ \hat{z} } \cdot b + (z \mod b)
 \]
 Da $\hat{z}<z$ besitzt die eindeutige Darstellung
 \[
-\hat{z}= (\hat{z_{n-1}},\ldots, \hat{z_0})_b
+\hat{z}= (\hat{z}_{n-1},\ldots, \hat{z_0})_b
 \]
-Bemerke $\hat{z_{n-1}}=0$, da 
+Bemerke $\hat{z}_{n-1}=0$, da 
 \[
-\left( \hat{z_{n-1}}b^{n-1} \right)b \le z \le b^{n}-1
+\left( \hat{z}_{n-1}b^{n-1} \right)b \le z \le b^{n}-1
 \]
 Also ist $z_b$ eine n-stellige Darstellung von z in b-adischen Zahlensystem
 
@@ -63,7 +63,7 @@ Also ist $z_b$ eine n-stellige Darstellung von z in b-adischen Zahlensystem
 z=\left( z_{n-1}^{(2)},\ldots, z_0^{(2)} \right)_b = \left(z_{n-1}^{(1)},\ldots,z_0^{(1)} \right)_b
 \]
 Sei $m \in  \N$ der größte Index mit $z_m^{(1)} \neq z_m^{(2)}$, \\
-Ohne Beschränkung der Allgemeinheit kann gesagt werden $z_m^{(1)>z_m^{(2)}}$. \\
+Ohne Beschränkung der Allgemeinheit kann gesagt werden $z_m^{(1)}>z_m^{(2)}$. \\
 Dann müssten die Stellen $0,1,\ldots,m-1$ den niedrigeren Wert von $z_m^{(2)}$ kompensieren. Die größte mit diesen Stellen darstellbare Zahl ist aber:
 \[
 \sum_{i=0}^{m-1}(b-1)b^{i}= (b-1)\sum_{i=0}^{m-1}b^{i}= b^{m}-1 \text{.}
@@ -77,8 +77,8 @@ Umwandlung von $(1364)_{10}$ in das Oktalsystem.
 \begin{itemize}
 	\item $1364 = 170 \cdot 8 +4$
 	\item $170 = 21 \cdot 8 +2$
-	\item \ldots
-	\item $0 \cdot 8 + 2$
+	\item $21 = 2 \cdot 8 + 5 $
+	\item $2 = 0 \cdot 8 + 2$
 \end{itemize}
 $\implies (2524)_8$
 \end{example}
